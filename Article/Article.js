@@ -119,17 +119,41 @@ function createElement(obj) {
   const article = document.createElement('div');
   const header = document.createElement('h2');
   const date = document.createElement('p');
-  const button = document.createElement('span');
+  const firstP = document.createElement('p');
+  const secondP = document.createElement('p');
+  const thirdP = document.createElement('p');
+  // const span = document.createElement('span');
 
   // Creating classes on the elements
   article.classList.add('article');
   date.classList.add('date');
-  button.classList.add('expandButton');
+  // span.classList.add('expandButton');
+
+  // Combining elements
+  article.appendChild(header);
+  article.appendChild(date);
+  article.appendChild(firstP);
+  article.appendChild(secondP);
+  article.appendChild(thirdP);
+  // article.appendChild(span);
+
+  // Assigning params
+  header.textContent = obj.title;
+  date.textContent = obj.date;
+  firstP.textContent = obj.firstParagraph;
+  secondP.textContent = obj.secondParagraph
+  thirdP.textContent = obj.thirdParagraph
+
 
   // Step 2 - adding event listeners
-  button.addEventListener('click', () => button.classList.toggle('expandButton'));
+  //button.addEventListener('click', () => button.classList.toggle('expandButton'));
 
   // Step 3
+  console.log(article);
   return article;
 }
 
+const articles = document.querySelector('.articles');
+
+// Step 4 - mapping over the data object
+data.forEach((item) => articles.appendChild(createElement(item)));
