@@ -127,9 +127,7 @@ function createElement(obj) {
   button.classList.add('expandButton');
 
   // Step 2 - adding event listeners
-  button.addEventListener('click', (event) => {
-    button.classList.toggle('expandButton');
-  })
+  button.addEventListener('click', () => button.classList.toggle('expandButton'));
 
   // Step 3
   return article;
