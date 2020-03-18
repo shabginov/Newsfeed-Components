@@ -122,12 +122,12 @@ function createElement(obj) {
   const firstP = document.createElement('p');
   const secondP = document.createElement('p');
   const thirdP = document.createElement('p');
-  // const span = document.createElement('span');
+  const span = document.createElement('span');
 
   // Creating classes on the elements
   article.classList.add('article');
   date.classList.add('date');
-  // span.classList.add('expandButton');
+  span.classList.add('expandButton');
 
   // Combining elements
   article.appendChild(header);
@@ -145,8 +145,8 @@ function createElement(obj) {
   thirdP.textContent = obj.thirdParagraph
 
 
-  // Step 2 - adding event listeners
-  //button.addEventListener('click', () => button.classList.toggle('expandButton'));
+  // Step 2 - adding event listener
+  span.addEventListener('click', () => article.classList.toggle('article-open'));
 
   // Step 3
   console.log(article);
