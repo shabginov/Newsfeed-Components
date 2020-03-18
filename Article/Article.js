@@ -85,6 +85,14 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  // Step 5
+  {
+    title: 'Lorem Ipsum',
+    date: 'Mar 18th, 2020',
+    firstParagraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam sem efficitur, congue velit at, tempor arcu. Aliquam facilisis sodales tincidunt. Curabitur enim ligula, rutrum quis suscipit a, dictum at magna. Donec ac tellus cursus, malesuada quam sed, luctus magna. Phasellus a dignissim ligula, quis aliquam urna. Quisque orci nunc, consequat eu interdum id, tristique sit amet magna.',
+    secondParagraph: 'Suspendisse eleifend congue risus, quis venenatis enim egestas id. Duis vel nunc eu massa accumsan luctus. Donec vehicula urna placerat lacus consequat maximus. Pellentesque tempus feugiat venenatis.',
+    thirdParagraph: 'Nam lorem augue, auctor nec accumsan sed, vulputate ut est. Mauris luctus imperdiet mattis. Praesent dignissim velit tincidunt hendrerit consectetur. Nam at diam vitae quam porta finibus.'
   }
 ];
 
