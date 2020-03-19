@@ -143,7 +143,7 @@ function createElement(obj) {
   article.appendChild(firstP);
   article.appendChild(secondP);
   article.appendChild(thirdP);
-  // article.appendChild(span);
+  article.appendChild(span);
 
   // Assigning params
   header.textContent = obj.title;
@@ -151,13 +151,14 @@ function createElement(obj) {
   firstP.textContent = obj.firstParagraph;
   secondP.textContent = obj.secondParagraph
   thirdP.textContent = obj.thirdParagraph
+  span.textContent = 'Click here';
 
 
   // Step 2 - adding event listener
   span.addEventListener('click', () => article.classList.toggle('article-open'));
 
   // Step 3
-  console.log(article);
+  // console.log(article);
   return article;
 }
 
