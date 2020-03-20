@@ -153,12 +153,10 @@ function createElement(obj) {
   thirdP.textContent = obj.thirdParagraph
   span.textContent = 'Click here';
 
-
   // Step 2 - adding event listener
   span.addEventListener('click', () => article.classList.toggle('article-open'));
 
   // Step 3
-  // console.log(article);
   return article;
 }
 

@@ -47,7 +47,6 @@ function createMenu(arr) {
     li.appendChild(document.createTextNode(item));
     ul.appendChild(li);
   })
-  // console.log(ul);
 
   // Step 3 selecting menu button
   const menuButton = document.querySelector('.menu-button');
@@ -57,7 +56,6 @@ function createMenu(arr) {
     menu.classList.toggle('menu--open');
   });
   
-  console.log(menu);
   return menu;
 }
 
@@ -65,4 +63,3 @@ const men = createMenu(menuItems);
 const header = document.querySelector('.header');
 
 header.appendChild(men);
-console.log(header);
