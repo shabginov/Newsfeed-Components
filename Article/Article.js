@@ -114,7 +114,7 @@ const data = [
 */
 
 
-function article(obj) {
+function createElement(obj) {
   // creating elements
   const article = document.createElement('div');
   const title = document.createElement('h2');
@@ -134,12 +134,27 @@ function article(obj) {
   span.classList.add('expandButton');
 
   // combining elements
-  article.append(title, date, paragraphOne, paragraphTwo, paragraphThree, span);
+  article.appendChild(title);
+  article.appendChild(date);
+  article.appendChild(paragraphOne);
+  article.appendChild(paragraphTwo);
+  article.appendChild(paragraphThree);
+  article.appendChild(span);
+
+  // obj
+  title.textContent = obj.title;
+  date.textContent = obj.date;
+  paragraphOne.textContent = obj.firstParagraph;
+  paragraphTwo.textContent = obj.secondParagraph;
+  paragraphThree.textContent = obj.thirdParagraph;
+  span.textContent = 'click here';
 
   return article;
 
 }
 
+// Adding articles to DOM
 const articles = document.querySelector('.articles');
-articles = article();
-console.log(articles);
+data.forEach(article => {
+  articles.appendChild(createElement(article));
+})
