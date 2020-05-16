@@ -41,24 +41,29 @@ function componentCreator(arr) {
   const ul = document.createElement('ul');
   menu.classList.add('menu');
   menu.appendChild(ul);
+
   arr.forEach((item, index) => {
     const li = document.createElement('li');
     li.textContent = arr[index];
     ul.appendChild(li);
   })
+
+  let menuButton = document.querySelector('.menu-button');
+// console.log(menuButton);
+
   // console.log(menu);
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('menu--open');
+  })
+
   return menu;
 }
 
 
-let menuButton = document.querySelector('.menu-button');
-// console.log(menuButton);
 
 
-menuButton.addEventListener('click', () => {
-  menu.classList.toggle('menu--open');
-})
 
 const element = componentCreator(menuItems);
+
 const header = document.querySelector('.header');
 header.appendChild(element);
